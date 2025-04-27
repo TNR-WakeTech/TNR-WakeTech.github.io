@@ -24,7 +24,7 @@ router.get('/', function(req, res){
     // It just returns a file to their browser 
     // from the same directory it's in, called gradebook.html
     //TNR notes: I had problems and had to rename this to the file name (with our name appended) we were told to in the prior lab
-    res.sendFile(path.join(__dirname, 'ROCHE_gradebook.html'));
+    res.sendFile(path.join(__dirname, 'public', 'ROCHE_gradebook.html'));
 });
 
 app.use("/", router);
